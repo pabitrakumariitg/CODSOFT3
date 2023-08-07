@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding-inline-start: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+
+  background-size: 100%;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url(background.jpg);
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculator {
+  background: rgb(26, 31, 97);
+  padding: 20px;
+  border-radius: 10px;
+}
+#text {
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.calculator form input {
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 149, 255, 0.768);
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
+#number:hover {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 200px cyan;
+}
+form .display {
+  display: flex;
+  justify-content: flex-end;
+
+  margin: 20px 0;
+}
+form .display input {
+  text-align: right;
+  flex: 1;
+  box-shadow: none;
+  font-size: 45px;
+  border-radius: 10px;
+}
+form input.equal {
+  width: 145px;
+  background: rgb(25, 244, 25);
+}
+form input.equal:hover {
+  width: 150px;
+  box-shadow: 0 0 5px white, 0 0 25px white, 0 0 200px white;
+  background: rgb(25, 244, 25);
+}
+
+form input.AC {
+  background: red;
+  transition: 0.5s;
+}
+form input.AC:hover {
+  width: 65px;
+  height: 65px;
+  box-shadow: 0 0 5px white, 0 0 25px white, 0 0 200px white;
+  border-radius: 50%;
+  background: rgb(244, 29, 169);
+  background: red;
+}
+form input.DEL {
+  background: gray;
+}
+form input.DEL:hover {
+  background: gray;
+  box-shadow: 0 0 5px white, 0 0 25px white, 0 0 200px white;
+}
+form input.ADD {
+  background: rgb(244, 29, 169);
+}
+form input.ADD:hover {
+  width: 55px;
+  height: 55px;
+  box-shadow: 0 0 5px CYAN, 0 0 25px cyan, 0 0 200px cyan;
+  background: rgb(244, 29, 169);
+}
+form input.SUB {
+  background: rgb(244, 29, 169);
+}
+form input.SUB:hover {
+  width: 55px;
+  height: 55px;
+  box-shadow: 0 0 5px CYAN, 0 0 25px cyan, 0 0 200px cyan;
+  background: rgb(244, 29, 169);
+}
+form input.MUL {
+  background: rgb(244, 29, 169);
+}
+form input.MUL:hover {
+  width: 55px;
+  height: 55px;
+  box-shadow: 0 0 5px CYAN, 0 0 25px cyan, 0 0 200px cyan;
+  background: rgb(244, 29, 169);
+}
+form input.DIV {
+  background: rgb(244, 29, 169);
+}
+form input.DIV:hover {
+  width: 55px;
+  height: 55px;
+  box-shadow: 0 0 5px CYAN, 0 0 25px cyan, 0 0 200px cyan;
+  background: rgb(244, 29, 169);
+}
+form input.DECI {
+  background: chocolate;
+}
+form input.DECI:hover {
+  background: chocolate;
+  box-shadow: 0 0 5px white, 0 0 25px WHITE, 0 0 200px white;
+}
+
+form input.operator {
+  color: white;
+  border-radius: 10px;
+}
+#placeholder {
+  font-size: 30px;
+  color: white;
+}
